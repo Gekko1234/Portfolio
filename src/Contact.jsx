@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import FooterComponent from './components/FooterComponent';
+import HeaderComponent from './components/HeaderComponent';
 
 function Contact() {
   // Estados para los campos del formulario
@@ -79,6 +80,7 @@ function Contact() {
 
   return (
     <div>
+      <HeaderComponent></HeaderComponent>
       <h1 style={{ color: 'white', textAlign: 'center', marginTop: '50px' }}>
         <span id="blueText">Contact</span> Me
       </h1>

@@ -7,7 +7,6 @@ import Contact from '../Contact';
 
 function HeaderComponent(props) {
  
-  const {links} = props;
 
   return (
     <header id="Home">
@@ -17,10 +16,10 @@ function HeaderComponent(props) {
         </div> 
 
         <nav className="nav">
-        <Link to="/#homeDiv">{links.home}</Link>
-        <a href="#aboutMeDiv">{links.aboutMe}</a>
-        <a href="#proyectDiv">{links.proyects}</a>
-        <Link className="lastNav" to="/contact">{links.contact}</Link>
+        <Link to={"/home"}>{"home"}</Link>
+        <a href="#aboutMeDiv">{"about"}</a>
+        <a href="#proyectDiv">{"proyect"}</a>
+        <Link className="lastNav" to={"/contact"}>{"contact"}</Link>
 
 
 
