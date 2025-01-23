@@ -1,0 +1,55 @@
+
+
+fieldset{
+    margin: auto;
+    padding-top: 10px;
+    max-width: 400px;
+    height: 500px;
+    font-size: 1.5em;
+    border: 0px;
+    border-radius: 4px;
+    background-color: rgb(204, 203, 203);
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#blueText{
+    color: #00AFC2;
+}
+
+fieldset::after, fieldset::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    z-index: -1;
+    padding: 5px;
+    background-image: conic-gradient(rgb(0, 89, 255), 
+                    rgb(255, 63, 255), rgb(0, 204, 255),
+                    rgb(255, 63, 255),rgb(0, 89, 255)); 
+}
+
+
+label{
+    margin: auto;
+    justify-content: center;
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-align: start;
+}
+
+input{
+    padding: 15px;
+}
+
+#enviar{
+    margin-top: 20px;
+}
+
+#avisos{
+    color: red;
+}
+

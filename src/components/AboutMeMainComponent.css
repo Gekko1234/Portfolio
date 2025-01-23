@@ -1,0 +1,53 @@
+.aboutMeDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Alineación de los elementos al centro */
+    margin-top: 100px;
+}
+
+.textAboutMeDiv{
+    margin-top: 100px;
+    width: 50%; /* half of the width */
+}
+
+.imgAboutMe{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.imgAboutMe img{
+    max-width: 400px;
+    border-radius: 10%;
+    max-height: auto;
+    background-color:#005457;
+}
+
+.textAboutMe{
+    text-align: start;
+}
+
+
+.imagesLanguajes img{
+    width: 40px;
+}
+
+@media (max-width: 850px) {
+    .aboutMeDiv {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .imgAboutMe {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .textAboutMeDiv{
+        width: 70%;
+        margin-top: 50px;
+    }
+}

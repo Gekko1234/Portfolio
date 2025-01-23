@@ -1,0 +1,91 @@
+.homeDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Alineación de los elementos al centro */
+    margin-top: 50px;
+}
+
+.textDivHome{
+    margin-top: 100px;
+    width: 50%; /* half of the width */
+}
+
+.whiteText{
+    font-size: 2em;
+    text-align: center;
+    text-shadow:0px 0px 20px #00AFC2;
+    transition: text-shadow 1s ease-in-out;
+}
+
+/* When hovering the div of the text, there will be a glowing animation for the text */
+.textDivHome:hover .whiteText{
+    text-shadow:0px 0px 20px #00AFC2, /* adding shadows */
+                0px 0px 20px #00AFC2,
+                0px 0px 20px #00AFC2;
+    animation: animateWhite 5s linear infinite; /* animation for the rainbow glow effect */
+    transition: all 1s ease; /* transition for not changing all in 0secs*/
+}
+
+@keyframes animateWhite {
+    from{
+        filter: hue-rotate(0deg); /* it will run all the colours */
+    }to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.blueText{
+    color: #00AFC2;
+    font-size: 2em;
+    text-shadow: #ffffff 0 0 20px;
+    text-align: center;
+    transition: text-shadow 1s ease-in-out; 
+}
+
+.textDivHome:hover .blueText{
+    text-shadow:0px 0px 20px #ffffff,
+                0px 0px 20px #ffffff,
+                0px 0px 0px #ffffff;
+    animation: animateBlue 5s linear infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animateBlue {
+    from{
+        filter: hue-rotate(0deg);
+    }to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.imgHome{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.imgHome img{
+    display: block;
+    max-width:400px;
+    border-radius: 5%;
+}
+
+@media (max-width: 850px) {
+    .homeDiv {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    .textDivHome,
+    .imgHome {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .imgHome img {
+        max-width: 300px;
+        margin-top: 50px; 
+    }
+}

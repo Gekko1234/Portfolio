@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #222831; 
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+

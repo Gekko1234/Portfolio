@@ -1,0 +1,79 @@
+/* Header's main container */
+header {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; 
+  padding: 0px 5%; 
+  background-color: #222831; 
+  box-shadow: 3px 3px 10px 0 black;
+
+}
+
+/* Logo's conatiner */
+.logo {
+  margin-right: auto;
+}
+
+/* Logo */
+.logoNav {
+  width: 150px; 
+  height: auto; 
+  margin-left: 0;
+}
+
+
+
+/* Nav */
+.nav {
+  display: flex; 
+  align-items: center;
+  gap: 15px; /* Space between elements */
+}
+
+.nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+}
+
+/* Icons */
+.lastLogo, .logo {
+  font-size: 20px; 
+  margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width:850px) {
+  header {
+    flex-direction: column; /* Vertical column */
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 0; /* Remove margin of logo */
+    margin-bottom: 10px; 
+  }
+
+  .logoNav {
+    width: 100px; 
+    margin: 0 auto; 
+  }
+
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+  }
+
+  .nav a {
+    font-size: 15px; 
+    padding: 5px; 
+  }
+}
