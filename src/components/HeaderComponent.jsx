@@ -16,10 +16,10 @@ function HeaderComponent(props) {
         </div> 
 
         <nav className="nav">
-        <Link to={"/home"}>{"home"}</Link>
-        <a href="#aboutMeDiv">{"about"}</a>
-        <a href="#proyectDiv">{"proyect"}</a>
-        <Link className="lastNav" to={"/contact"}>{"contact"}</Link>
+        <Link to={"/home"}>{"Home"}</Link>
+        <a href="#aboutMeDiv">{"About me"}</a>
+        <a href="#proyectDiv">{"Proyect"}</a>
+        <Link className="lastNav" to={"/contact"}>{"Contact me"}</Link>
 
 
 
